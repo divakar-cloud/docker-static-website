@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Docker Website</title>
+</head>
+<body style="text-align:center;font-family:Arial;margin-top:100px;">
+    <h1>🚀Welcome to My First Docker Project</h1>
+    <h2>Created by Divakar</h2>
+    <p>This website is running inside a Docker Container.</p>
+</body>
+</html>
+
+<!-- 1. docker build -t my-first-website . ("docker build" - Create a Docker image,
+                                            "-t" - Give it a name,
+                                            "my-first-website" - any name
+                                            "." - Use the current folder)
+     2. docker images (Check Your Images)
+     3. docker run -d -p 8081:80 --name website my-first-website (Run the Container using already build image)                                          |
+        | ------------------ | ------------------------------------------------------ |
+        | `docker run`       | Start a container                                      |
+        | `-d`               | Run in the background                                  |
+        | `-p 8080:80`       | Connect your PC's port 8080 to the container's port 80 |
+        | `--name website`   | Give the container a friendly name                     |
+        | `my-first-website` | Use your image                                         |
+        ------------------------------------------------------------------------------
+     4. http://localhost:8081 (Open your browser & check)
+     5. docker ps (Verify the Container)
+     6. docker stop website (stop the container)
+     7. docker logs website (check logs)
+     8. docker port website (check ports)
+     9. docker rm website (Remove container) <1st delete & remove>
+     10. docker rmi my-first-website (Remove image)
+
+     -->
